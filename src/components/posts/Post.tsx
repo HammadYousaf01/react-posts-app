@@ -1,6 +1,11 @@
+import React from "react";
 
+interface Props {
+  title: string,
+  body: string
+}
 
-function Post({ title, body }) {
+const Post: React.FC<Props> = ({ title, body }) => {
   return (
     <div className="post">
       <div className="post-title">
@@ -12,6 +17,5 @@ function Post({ title, body }) {
     </div>
   )
 }
-
 
 export default Post;

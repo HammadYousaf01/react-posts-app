@@ -1,7 +1,14 @@
+import React from "react"
 
 
-export default function NavLink({ title }) {
+interface Props {
+  title: string
+}
+
+const NavLink: React.FC<Props> = ({ title }) => {
   return (
     <div className="nav-link">{title}</div>
   )
 }
+
+export default NavLink;

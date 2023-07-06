@@ -1,6 +1,10 @@
+import React from "react"
 
+interface Props {
+  title: string
+}
 
-export default function NavTitle({ title }) {
+const NavTitle: React.FC<Props> = ({ title }) => {
   return (
     <div className="nav-title-container">
       <h1 className="nav-title">{title}</h1>
@@ -8,3 +12,4 @@ export default function NavTitle({ title }) {
   )
 }
 
+export default NavTitle;

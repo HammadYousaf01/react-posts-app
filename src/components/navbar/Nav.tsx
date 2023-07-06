@@ -1,10 +1,11 @@
+import React from "react";
+
 import NavTitle from "./NavTitle";
 import NavLinks from "./NavLinks";
+import "./styles/nav.css"
 
-import "./nav.css"
 
-
-export default function Nav() {
+const Nav: React.FC = () => {
   return (
     <nav className="nav">
       <NavTitle title={"React Posts App"}/>
@@ -12,3 +13,5 @@ export default function Nav() {
     </nav>
   )
 }
+
+export default Nav;

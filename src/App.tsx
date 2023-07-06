@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Nav />
-      <Posts totalPosts={10} />
+      <Posts />
     </>
   )
 }

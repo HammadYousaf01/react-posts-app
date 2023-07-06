@@ -1,10 +1,13 @@
+import React from "react";
 import NavLink from "./NavLink";
 
 
-export default function NavLinks() {
+const NavLinks: React.FC = () => {
   return (
     <div className="nav-links-container">
       <NavLink title="Create"/>
     </div>
   )
 }
+
+export default NavLinks;
