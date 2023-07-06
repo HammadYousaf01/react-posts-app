@@ -1,7 +1,11 @@
+import Posts, { PostsAxios } from "./components/posts";
+import Nav from "./components/navbar";
+
 function App() {
   return (
     <>
-      <h1>Hello, World!</h1>
+      <Nav />
+      <Posts totalPosts={10} />
     </>
   )
 }
