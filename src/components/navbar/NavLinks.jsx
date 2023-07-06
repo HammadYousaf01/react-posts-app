@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 export default function NavLinks() {
   return (
     <div className="nav-links-container">
-      <NavLink title={"Create"}/>
+      <NavLink title="Create"/>
     </div>
   )
 }
