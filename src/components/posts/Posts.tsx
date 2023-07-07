@@ -4,14 +4,14 @@ import usePosts, { IPosts } from "./utils";
 
 
 const Posts: React.FC = () => {
-  const { posts, error, isLoading } = usePosts();
+  const { posts, error, loading } = usePosts();
   const totalPosts = 10;
 
-  if (isLoading) return <div>...Loading</div>
-  if (error) return <div>{error}</div>
+  if (loading) return <div>...Loading</div>
+  if (error) return <div>{error.toString()}</div>
   return (
     <div className="posts">
-      {posts?.data.slice(0, totalPosts).map((post: IPosts) => 
+      {posts.slice(0, totalPosts).map((post: IPosts) => 
         <Post key={post.id} title={post.title} body={post.body} />
       )}
     </div>

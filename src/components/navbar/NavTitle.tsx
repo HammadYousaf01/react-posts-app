@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
   title: string
@@ -7,7 +8,7 @@ interface Props {
 const NavTitle: React.FC<Props> = ({ title }) => {
   return (
     <div className="nav-title-container">
-      <h1 className="nav-title">{title}</h1>
+      <Link to="/" style={{color: "white", textDecoration: "none"}}><h1 className="nav-title">{title}</h1></Link>
     </div>
   )
 }

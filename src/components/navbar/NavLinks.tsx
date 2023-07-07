@@ -5,7 +5,7 @@ import NavLink from "./NavLink";
 const NavLinks: React.FC = () => {
   return (
     <div className="nav-links-container">
-      <NavLink title="Create"/>
+      <NavLink title="Create" link="posts/new"/>
     </div>
   )
 }

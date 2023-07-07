@@ -1,7 +1,9 @@
 import Posts from "./Posts";
-import PostsAxios from "./PostsAxios";
+import Post from "./Post";
+import SinglePost from "./SinglePost";
+import CreatePost from "./CreatePost";
 
 import "./styles/posts.css";
 
 export default Posts;
-export { PostsAxios };
+export { CreatePost, Post, SinglePost };

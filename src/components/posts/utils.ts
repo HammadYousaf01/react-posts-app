@@ -1,5 +1,6 @@
 import useSwr from "swr";
 import fetcher from "../../utils/fetcher";
+import useAxios from "axios-hooks";
 
 export interface IPosts {
   id?: number,
@@ -8,11 +9,22 @@ export interface IPosts {
 }
 
 export default function usePosts() {
-  const { data, error, isLoading } = useSwr("https://jsonplaceholder.typicode.com/posts", fetcher);
+  const [{ data, error, loading }] = useAxios("https://jsonplaceholder.typicode.com/posts");
 
   return {
     posts: data,
     error,
-    isLoading
+    loading
+  }
+}
+
+
+export function usePost(id: string | undefined) {
+  const [{ data, error, loading }] = useAxios(`https://jsonplaceholder.typicode.com/posts/${id}`);
+
+  return {
+    post: data,
+    error,
+    loading
   }
 }

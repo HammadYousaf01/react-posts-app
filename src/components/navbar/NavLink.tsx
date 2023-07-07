@@ -1,13 +1,15 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-router-dom";
 
 
 interface Props {
-  title: string
+  title: string,
+  link: string
 }
 
-const NavLink: React.FC<Props> = ({ title }) => {
+const NavLink: React.FC<Props> = ({ title, link }) => {
   return (
-    <div className="nav-link">{title}</div>
+    <Link to={link} className="nav-link">{title}</Link>
   )
 }
 

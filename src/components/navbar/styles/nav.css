@@ -3,12 +3,13 @@
   display: flex;
   color: white;
   background-color: #0078FB;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .nav-title {
   font-size: 22px;
   padding: 10px;
+  text-decoration: none;
 }
 
 .nav-links-container {
@@ -27,6 +28,7 @@
   border: 1px solid white;
   margin: 5px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .nav-link:hover {
