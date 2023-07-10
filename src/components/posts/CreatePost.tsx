@@ -1,11 +1,8 @@
 import React from "react";
-
+import PostForm from "./PostForm";
 
 const CreatePost: React.FC = () => {
-  return (
-    <div>Create Post</div>
-  )
-}
-
+  return <PostForm />;
+};
 
 export default CreatePost;
