@@ -1,0 +1,38 @@
+
+.nav {
+  display: flex;
+  color: white;
+  background-color: #0078FB;
+  padding: 0 15px;
+}
+
+.nav-title {
+  font-size: 22px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-links-container {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  margin: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #0078FB;
+  background-color: white;
+  transition-delay: 0.1s;
+}
