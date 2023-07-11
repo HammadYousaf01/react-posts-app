@@ -35,7 +35,7 @@ label {
   width: 300px;
   margin-top: 20px;
   border: none;
-  background-color: #0078fb;
+  background-color: var(--primary-background-color);
   color: white;
   font-size: 16px;
   text-transform: uppercase;

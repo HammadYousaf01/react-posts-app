@@ -1,8 +1,7 @@
-
 .nav {
   display: flex;
   color: white;
-  background-color: #0078FB;
+  background-color: var(--primary-background-color);
   padding: 0 15px;
 }
 
@@ -24,7 +23,7 @@
   font-size: 14px;
   font-weight: 500;
   border-radius: 5px;
-  color: white;
+  color: var(--primary-color);
   border: 1px solid white;
   margin: 5px;
   text-transform: uppercase;
@@ -32,7 +31,7 @@
 }
 
 .nav-link:hover {
-  color: #0078FB;
-  background-color: white;
-  transition-delay: 0.1s;
+  color: var(--primary-background-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
